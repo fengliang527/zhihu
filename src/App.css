@@ -1,0 +1,527 @@
+body {
+    margin: 0;
+    font-size: 12px;
+    /* line-height:1.5; */
+    line-height: 1;
+    -webkit-text-size-adjust: 100% !important; /*禁止IOS调整字体大小*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p, dl, dd {
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+strong, b {
+    font-weight: normal;
+}
+
+i, em {
+    font-style: normal;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: inherit;
+}
+
+input, textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a, button, input, select, textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+}
+
+button, input, optgroup, select, textarea {
+    -webkit-appearance: none;
+    /*去掉webkit默认的表单样式*/
+}
+
+.i-wrap {
+    padding-top: 1.7rem;
+}
+
+.i-top {
+    width: 100%;
+    box-sizing: border-box;
+    height: 1.7rem;
+    background: #00a2ed;
+    font-size: .5rem;
+    color: #ffffff;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.i-top img {
+    width: .58rem;
+    height: .7rem;
+}
+
+.i-top div {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.i-content {
+    position: relative;
+    touch-action: none;
+}
+
+.i-title {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 .4rem;
+    position: absolute;
+    bottom: 0.4rem;
+    font-size: .6rem;
+    color: white;
+    line-height: .68rem;
+}
+
+.i-news,.before-news {
+    padding: 0 .24rem;
+    width: 100%;
+    box-sizing: border-box;
+background: #f3f3f3;
+}
+
+.i-news > h2,.before-news h2 {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    color: #737373;
+    font-size: .4rem;
+}
+
+.news-wrap {
+    width: 100%;
+}
+
+.news-wrap ul {
+    padding: 0;
+}
+
+.news-wrap li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .4rem .5rem;
+    background: white;
+    height: 2.96rem;
+    margin-bottom: .24rem;
+    border-radius: .14rem;
+    box-shadow: .0rem .05rem #ccc;
+}
+
+.news-wrap li h3 {
+    font-size: .52rem;
+    float: left;
+    line-height: .6rem;
+    width: 6.68rem;
+
+    box-sizing: border-box;
+}
+
+.news-wrap li div {
+    width: 2.48rem;
+    height: 2.16rem;
+    float: right;
+    background: #333333;
+}
+
+.news-wrap img {
+    width: 2.48rem;
+    height: 2.16rem;
+}
+
+.self-center {
+
+    width: 9.1rem;
+    height: 100%;
+    background: #ffffff;
+}
+
+.self-top {
+    width: 100%;
+    height: 3.3rem;
+    background: #00a2ed;
+    padding-top: .32rem;
+}
+
+.back-index {
+    width: 100%;
+    height: 1.5rem;
+    background: #f0f0f0;
+    font-size: .5rem;
+    line-height: 1.5rem;
+    color: #00a2ed;
+    padding-left: .5rem;
+    box-sizing: border-box;
+}
+
+.back-index > span {
+    display: inline-block;
+    height: .55rem;
+    width: .6rem;
+    vertical-align: center;
+    margin-right: .5rem;
+    background: url("./assest/img/index.png");
+    background-size: .6rem .55rem;
+}
+
+.center-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, .5);
+}
+
+.user {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: .5rem;
+    height: 1.08rem;
+}
+
+.user > span {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.08rem;
+    height: 1.08rem;
+    border-radius: 50%;
+    background: white;
+}
+
+.user > span > img {
+    width: 1.08rem;
+    height: 1.08rem;
+}
+
+.user > strong {
+    margin-left: .4rem;
+    color: white;
+    font-size: .3rem;
+    line-height: 1.08rem;
+}
+
+.coll-dow {
+    width: 100%;
+    height: .5rem;
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: .44rem;
+    color: white;
+}
+
+.coll-dow img {
+    width: .5rem;
+    height: .5rem;
+}
+
+/*详情页*/
+.d-top {
+    height: 1.68rem;
+    background: #00a2ed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.d-top img {
+    width: .6rem;
+    height: .6rem;
+}
+
+.d-back {
+    margin-left: .5rem;
+}
+
+.d-top-right {
+    width: 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-wrap {
+    padding-top: 1.68rem;
+}
+
+#img-place-holder {
+    height: 6rem;
+}
+
+#img-place-holder > img {
+    /*height: 6rem;*/
+    width: 100%;
+    height: 100%;
+}
+
+.headline .img-place-holder {
+    display: none;
+}
+
+/*分享*/
+.d-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.share {
+    width: 9.3rem;
+    height: 10.9rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -4.65rem;
+    margin-top: -5.45rem;
+    background: white;
+    border-radius: .1rem;
+}
+
+.share-title {
+    font-size: .6rem;
+    display: block;
+    margin: .68rem 0 0 .7rem;
+}
+
+.share-tag > img {
+    width: 7.41rem;
+    height: 8.08rem;
+    margin-top: .55rem;
+    margin-left: 1rem;
+}
+.d-remark{
+    color: white;
+    font-size: .36rem;
+}
+.d-remark>img{
+    margin-right: .24rem;
+}
+.c-top {
+    width: 100%;
+    height: 1.68rem;
+    background: #00a2ed;
+    font-size: .54rem;
+    color: white;
+    line-height: 1.68rem;
+    letter-spacing: .08rem;
+    margin-bottom: .3rem;
+}
+
+.c-top > img {
+    width: .6rem;
+    height: .6rem;
+    vertical-align: center;
+    margin-left: .55rem;
+    margin-right: 1rem;
+
+}
+
+.c-bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #f4f4f4;
+}
+
+/*短评*/
+.remark-wrap{
+    padding-top: 1.68rem;
+}
+.s-top {
+    width: 100%;
+    height: 1.68rem;
+    background: #00a2ed;
+    color: white;
+    font-size: .54rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.s-left {
+    width: 5.1rem;
+    display: flex;
+    line-height: 1.68rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.s-left img {
+    width: .6rem;
+    height: .6rem;
+}
+
+.s-comment > img {
+    width: .6rem;
+    height: .6rem;
+    margin-right: .4rem;
+}
+
+.pack {
+    height: 1.4rem;
+    width: 100%;
+    border-top: .05rem solid #e5e5e5;
+    border-bottom: .05rem solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    font-size: .38rem;
+    line-height: 1.4rem;
+    color: #525252;
+    box-sizing: border-box;
+    padding: 0 .5rem;
+}
+
+.pack img {
+    width: .4rem;
+    height: .4rem;
+}
+.long>.pack{
+    border-bottom: .05rem solid #e5e5e5;
+}
+.remark ul {
+    padding: 0;
+}
+
+.remark li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5rem .5rem .4rem;
+    border-bottom: .05rem solid #e5e5e5;
+
+}
+
+.user-head {
+    width: 1.1rem;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.remark-main {
+    margin-left: .18rem;
+    width: 8.5rem;
+    display: inline-block;
+}
+
+.remark-main > div {
+    padding-top: .15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remark-main > p{
+    line-height: .66rem;
+    font-size: .46rem;
+}
+.remark-main img{
+    width: .4rem;
+    height: .4rem;
+    vertical-align: center;
+}
+.user-head img {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+}
+.like-num{
+    color: #b8b8b8;
+}
+.like{
+    margin-right: .2rem;
+}
+.author {
+    font-size: .48rem;
+    font-weight: 700;
+}
+.long{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+.long>img{
+    width: 3.5rem;
+    height: 4.5rem;
+    display: block;
+    margin:  6.86rem auto 0;
+}
+.shortMark>.pack{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: white;
+}
+.remark>ul{
+    padding-top: 1.4rem;
+}
+.long>ul{
+    padding-top: .7rem;
+}
